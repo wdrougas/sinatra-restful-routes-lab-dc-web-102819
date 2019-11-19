@@ -1,8 +1,8 @@
 GIT
-  remote: https://github.com/bmabey/database_cleaner.git
-  revision: 85767fa7011355049aa526ffa1f99c6972b98fbf
+  remote: https://github.com/DatabaseCleaner/database_cleaner-active_record.git
+  revision: ef056f64c20a0d2b7176eac4d532b9a1e71ca0d1
   specs:
-    database_cleaner (1.8.0)
+    database_cleaner-active_record (2.0.0)
 
 GEM
   remote: http://rubygems.org/
@@ -110,7 +110,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord (= 4.2.5)
   capybara
-  database_cleaner!
+  database_cleaner-active_record!
   json
   pry
   pry-nav

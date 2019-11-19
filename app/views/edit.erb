@@ -1,13 +1,18 @@
-<form method="POST" action="/recipes/:id">
-<input type="hidden" name="_method" value="PUT">
-<label for="name">Name: </label>
-<input type="text" name="name" value="<%=@recipe.name%>"></input>
+<form method="POST" action="/recipes/<%=@recipe.id%>">
+	<input type="hidden" name="_method" value="PUT">
+	
+	<!-- <input type="hidden" name="id" value="<%=@recipe.id%>"> -->
 
-<label for="ingredients">Ingredients: </label>
-<input type="text" name="ingredients" value="<%=@recipe.ingredients%>"></input>
+	<label for="name">Name: </label>
+	<input type="text" name="name" value="<%=@recipe.name%>"></input>
+	
+	<label for="ingredients">Ingredients: </label>
+	<input type="text" name="ingredients" value="<%=@recipe.ingredients%>"></input>
 
-<label for="cook_time">Cook Time: </label>
-<input type="text" name="cook_time" value="<%=@recipe.cook_time%>"></input>
+	
+	<label for="cook_time">Cook Time: </label>
+	<input type="text" name="cook_time" value="<%=@recipe.cook_time%>"></input>
 
-<input type="Submit" title="Submit">
+	<input type="Submit" title="Submit">
+
 </form>
